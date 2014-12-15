@@ -1,0 +1,113 @@
+Actividad 4.2
+Creacion Usuario.
+
+root@jesus-SO:/# adduser juan
+Añadiendo el usuario `juan' ...
+Añadiendo el nuevo grupo `juan' (1001) ...
+Añadiendo el nuevo usuario `juan' (1001) con grupo `juan' ...
+Creando el directorio personal `/home/juan' ...
+Copiando los ficheros desde `/etc/skel' ...
+Introduzca la nueva contraseña de UNIX: 
+Vuelva a escribir la nueva contraseña de UNIX: 
+passwd: contraseña actualizada correctamente
+Cambiando la información de usuario para juan
+Introduzca el nuevo valor, o presione INTRO para el predeterminado
+	Nombre completo []: Juan Perez
+	Número de habitación []: 
+	Teléfono del trabajo []: 
+	Teléfono de casa []: 
+	Otro []: 
+¿Es correcta la información? [S/n] s
+
+Creacion usuario sin contraseña hasta su primer uso.
+root@jesus-SO:/# adduser -disabled-login maria
+Añadiendo el usuario `maria' ...
+Añadiendo el nuevo grupo `maria' (1002) ...
+Añadiendo el nuevo usuario `maria' (1002) con grupo `maria' ...
+Creando el directorio personal `/home/maria' ...
+Copiando los ficheros desde `/etc/skel' ...
+Cambiando la información de usuario para maria
+Introduzca el nuevo valor, o presione INTRO para el predeterminado
+	Nombre completo []: Maria Sanchez
+	Número de habitación []: 
+	Teléfono del trabajo []: 
+	Teléfono de casa []: 
+	Otro []: 
+¿Es correcta la información? [S/n] S
+
+Creacion normal
+root@jesus-SO:/# adduser jose
+Añadiendo el usuario `jose' ...
+Añadiendo el nuevo grupo `jose' (1003) ...
+Añadiendo el nuevo usuario `jose' (1003) con grupo `jose' ...
+Creando el directorio personal `/home/jose' ...
+Copiando los ficheros desde `/etc/skel' ...
+Introduzca la nueva contraseña de UNIX: 
+Vuelva a escribir la nueva contraseña de UNIX: 
+passwd: contraseña actualizada correctamente
+Cambiando la información de usuario para jose
+Introduzca el nuevo valor, o presione INTRO para el predeterminado
+	Nombre completo []: Jose Garcia
+	Número de habitación []: 
+	Teléfono del trabajo []: 
+	Teléfono de casa []: 
+	Otro []: 
+¿Es correcta la información? [S/n] S
+
+Eliminacion de usurio
+root@jesus-SO:/# userdel jose
+root@jesus-SO:/home# ls
+jesus  jose  juan  maria
+
+Obseservamos que se elimina el usuario pero no se elimina su directorio home al que podemos seguir teniendo acceso siempre que seamos root.
+
+3. Cambiamos de roll dentro del sistema y pasamos a ser uno de los usuarios que hemos creado.
+root@jesus-SO:/home# su juan
+juan@jesus-SO:~$ ls
+examples.desktop
+
+Actividad 4.3
+jesus:x:1000:1000:Jesus,,,:/home/jesus:/bin/bash
+
+jesus:nombre de la cuenta.
+x: Clave de acceso encriptada.
+1000: UID de esta cuenta.
+1000: GID de esta cuenta.
+Jesus: Nombre del Usuario.
+/home/jesus: Directorio de trabajo.
+/bin/bash: Interprete de comando (shell) del usuario.
+
+Actividad 4.4
+
+jesus@jesus-SO:/etc$ cat shadow
+cat: shadow: Permiso denegado
+Con usuario distinto al root no nos deja visualizar este fichero ya que en este fichero del sistema se almacena las contrasñas cifradas y nos da información sobre caducidad y validez de las cuentas, una información que no puede ser mostrada a cualquier usuario que tenga acceso al sistema por lo tanto debe de tener acceso restringido.
+
+Actividad 4.5
+
+1. Creación de un grupo y asignacion de algunos de los usuarios
+root@jesus-SO:/etc# groupadd grupo1
+root@jesus-SO:/etc# groupadd grupo2
+
+root@jesus-SO:/etc# gpasswd -a jesus grupo1
+Añadiendo al usuario jesus al grupo grupo1
+root@jesus-SO:/etc# gpasswd -a juan grupo1
+Añadiendo al usuario juan al grupo grupo1
+root@jesus-SO:/etc# gpasswd -a jesus grupo2
+Añadiendo al usuario jesus al grupo grupo2
+root@jesus-SO:/etc# gpasswd -a maria grupo2
+Añadiendo al usuario maria al grupo grupo2
+root@jesus-SO:/etc# gpasswd -a root grupo2
+Añadiendo al usuario root al grupo grupo2
+root@jesus-SO:/etc# gpasswd -a root grupo1
+Añadiendo al usuario root al grupo grupo1
+
+
+2.Información que devuelve id si estas conectado como root.
+
+root@jesus-SO:/etc# id root
+uid=0(root) gid=0(root) grupos=0(root),1003(grupo1),1004(grupo2)
+
+
+
+

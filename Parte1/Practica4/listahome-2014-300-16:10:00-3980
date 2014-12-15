@@ -1,0 +1,43 @@
+.
+├── listahome-2014-300-16:10:00-3980
+├── Practica1
+│   ├── Actividades
+│   ├── Actividades~
+│   ├── arranque.sh
+│   ├── arranque.sh~
+│   ├── SO-P-ManualEditor-vi.pdf
+│   ├── SO-P-Modulo1-Sesion1-Autoevaluacion.odt
+│   └── SO-P-Modulo1-Sesion1-Guion.pdf
+├── Practica2
+│   ├── Ejercicios
+│   ├── Ejercicios~
+│   ├── SO-P-Modulo1-Sesion2-Autoevaluacion.odt
+│   └── SO-P-Modulo1-Sesion2-Guion.pdf
+├── Practica3
+│   ├── Ejercicios
+│   ├── Ejercicios~
+│   ├── monitorizacion_vmstat
+│   ├── prueba_proceso
+│   ├── prueba_proceso~
+│   ├── script~
+│   ├── SO-P-Modulo1-Sesion3-Guion.pdf
+│   └── todos-P-Modulo1-Sesion3-Autoevaluacion.odt
+├── Practica4
+│   ├── exitat.txt
+│   ├── SO-P-Modulo1-Sesion4-Autoevaluacion.odt
+│   └── SO-P-Modulo1-Sesion4-Guion.pdf
+├── Professional_Linux_kernel_architecture.pdf
+├── Sistemas_Operativos_(7ed_2005)_Galvin_Silberschatz_Gagne.pdf
+└── Tema1
+    ├── 20140929_105938.jpg
+    ├── 20140929_105949.jpg
+    ├── 20140929_105951.jpg
+    ├── 20140929_110015.jpg
+    ├── 20140929_110023.jpg
+    ├── 20140929_110053.jpg
+    ├── 20140929_110104.jpg
+    ├── 20140929_110115.jpg
+    ├── RElacionn ejercicios.docx
+    └── SO-C-T-Tema1.Estructuras.pdf
+
+5 directories, 35 files

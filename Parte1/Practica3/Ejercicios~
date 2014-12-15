@@ -1,0 +1,163 @@
+Ejercicio 3.1
+
+jesus@jesus-SO:~$ uptime
+ 15:47:59 up 10 min,  2 users,  load average: 0,04, 0,29, 0,29
+
+a) El sistema lleva en marca 10 minutos desde el arranque.
+b) En este momento hay 2 usurios trabajando.
+c) La carga media durante los ultimos 15 minutos ha sido de 0,29
+
+Ejercicio 3.2
+
+a)
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ ./prueba_proceso 100000
+El valor de la variable es: 2200000
+
+b)
+Aumentar la prioridad:
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ renice 20 4479
+Disminuir la prioridad
+root@jesus-SO:/home/jesus/Dropbox/Quinto/SO/Practica3# nice -n 5 ./prueba_proceso 2200000
+
+Foto 1
+
+real	0m20.649s
+user	0m7.312s
+sys	0m0.000s
+El valor de la variable es: 2200000
+
+real	0m20.720s
+user	0m7.000s
+sys	0m0.000s
+El valor de la variable es: 2200000
+
+real	0m20.343s
+user	0m6.932s
+sys	0m0.000s
+El valor de la variable es: 220000
+
+Actividad 3.3
+
+a)
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ ps
+  PID TTY          TIME CMD
+ 2376 pts/0    00:00:00 bash
+ 2424 pts/0    00:00:24 gedit
+ 4770 pts/0    00:00:00 ps
+
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ pstree 2424
+gedit───4*[{gedit}]
+
+b) Preguntar
+
+Actividad 3.4
+
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ mpstat
+Linux 3.13.0-37-generic (jesus-SO) 	20/10/14 	_i686_	(1 CPU)
+
+16:59:18     CPU    %usr   %nice    %sys %iowait    %irq   %soft  
+16:59:18     all   15,65    0,88    1,64    2,60    0,00    0,04  
+
+%steal  %guest  %gnice   %idle
+  0,00    0,00    0,00   79,20
+
+a) El porcentaje de tiempo que usa la CPU para atender las interrupciones hardware viene dado por %irq que es 0.
+b)El procentaje de tiempo en tratar interrupciones software viene marcado por %soft y en este caso es del 0,04%
+
+
+c)
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ top
+KiB Swap:  1046524 total, 292 used,  1046232 free.293212cached Mem
+
+El espacio libre en el swap es de 1046232 y el ocupado 292
+
+
+Actividad 4.1
+
+La orden free tiene varios modificadores que son los siguientes:
+ -b muestra la cantidad de memoria en bytes
+ -k muestra la cantidad de memoria en kilobytes
+ -m muestra la cantidad de memoria en megabytes
+ -t muestra en una linea los totales
+ -o desactiva mostrar lineas del buffer
+ -s activa el refresco de la informacion en un tiempo
+
+Resultados mostrados por free
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ free ./prueba_proceso 100
+   total       usado       libre     compart.    búffers     almac.
+Mem: 1025476     928960      96516      15888      56736     295236
+-/+ buffers/cache:     576988     448488
+Intercambio:    1046524        292    1046232
+
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ watch -n 1 ./prueba_proceso 100
+
+
+Actividad 4.2
+
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica3$ vmstat 2 20 > monitorizacion_vmstat&
+
+Actividad 5.2
+
+jesus@jesus-SO:~$ ls -l -u -c
+total 48
+drwxr-xr-x 2 jesus jesus 4096 oct 15 18:58 Descargas
+drwxr-xr-x 2 jesus jesus 4096 oct  4 11:50 Documentos
+drwx------ 4 jesus jesus 4096 oct 20 15:38 Dropbox
+drwxr-xr-x 2 jesus jesus 4096 oct  4 11:50 Escritorio
+-rw-r--r-- 1 jesus jesus 8980 oct  4 11:40 examples.desktop
+drwxr-xr-x 2 jesus jesus 4096 oct 20 16:38 Imágenes
+drwxr-xr-x 2 jesus jesus 4096 oct  4 11:50 Música
+drwxr-xr-x 2 jesus jesus 4096 oct  4 11:50 Plantillas
+drwxr-xr-x 2 jesus jesus 4096 oct  4 11:50 Público
+drwxr-xr-x 2 jesus jesus 4096 oct  4 11:50 Vídeos
+
+
+Actividad 5.3
+jesus@jesus-SO:~$ du
+316904	.
+Numero de bloques de datos usados en la particion raiz de mi sistema.
+
+jesus@jesus-SO:~$ du -m
+310	.
+Muestra el tamaño de los bloques usados en Megabytes.
+
+Ejercicio 5.4
+
+jesus@jesus-SO:~$ df -i
+S.ficheros     Nodos-i NUsados NLibres NUso% Montado en
+/dev/sda1      1245184  245957  999227   20% /
+El numero de i-nodos usados en el directorio raiz es de 245957
+Se pueden crear todavia 999227 archivos en esta partición.
+
+Ejercicio 5.5
+
+Tamaño de /etc
+root@jesus-SO:~# du -m /etc
+13	/etc
+Tamaño de /var
+root@jesus-SO:~# du -m /var
+875	/var
+
+Tamaño de /bin
+root@jesus-SO:~# du -m /bin
+10	/bin
+
+Tamaño de /usr
+root@jesus-SO:~# du -m /usr
+2837	/usr
+
+Tamaño de /lib
+root@jesus-SO:~# du -m /lib
+514	/lib
+
+Se observa que el directorio con mas tamaño es el de usr ya que es el que contiene toda la informacion con respecto al usuarios del sistema
+
+Actividad 5.6
+
+root@jesus-SO:~# du -m --block-size=4096 -h /etc
+13M	/etc
+
+El tamaño por omision utilizado en el sistema de archivos es de 512 bytes
+
+
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+#Script del ejercicio 3.2
+
+
+for ((i=0; i<=$1; i++))
+do
+
+	((v=$i+22))
+	echo $v
+done
+
+echo "El valor de la variable es:" $v 	
+
+

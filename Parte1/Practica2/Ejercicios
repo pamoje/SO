@@ -1,0 +1,120 @@
+Ejercicio 3.1
+b)
+root@jesus-SO:/# dd if=/dev/zero of=/root/archivo_SA20 bs=2k count=10000
+10000+0 registros leídos
+10000+0 registros escritos
+20480000 bytes (20 MB) copiados, 0,0839027 s, 244 MB/s
+root@jesus-SO:/# dd if=/dev/zero of=/root/archivo_SA30 bs=3k count=10000
+10000+0 registros leídos
+10000+0 registros escritos
+30720000 bytes (31 MB) copiados, 0,230633 s, 133 MB/s
+
+c)
+root@jesus-SO:/# losetup /dev/loop0 /root/archivo_SA20
+root@jesus-SO:/# losetup /dev/loop1 /root/archivo_SA30
+
+d)
+root@jesus-SO:/# fdisk -l /dev/loop0 /dev/loop1
+
+Disco /dev/loop0: 20 MB, 20480000 bytes
+255 cabezas, 63 sectores/pista, 2 cilindros, 40000 sectores en total
+Unidades = sectores de 1 * 512 = 512 bytes
+Tamaño de sector (lógico / físico): 512 bytes / 512 bytes
+Tamaño E/S (mínimo/óptimo): 512 bytes / 512 bytes
+Identificador del disco: 0x00000000
+
+El disco /dev/loop0 no contiene una tabla de particiones válida
+
+Disco /dev/loop1: 30 MB, 30720000 bytes
+255 cabezas, 63 sectores/pista, 3 cilindros, 60000 sectores en total
+Unidades = sectores de 1 * 512 = 512 bytes
+Tamaño de sector (lógico / físico): 512 bytes / 512 bytes
+Tamaño E/S (mínimo/óptimo): 512 bytes / 512 bytes
+Identificador del disco: 0x00000000
+
+El disco /dev/loop1 no contiene una tabla de particiones válida
+
+B)
+Disco dev/sdb1: 2064 MB, 2064513024 bytes
+255 cabezas, 63 sectores/pista, 250 cilindros, 4032252 sectores en total
+Unidades = sectores de 1 * 512 = 512 bytes
+Tamaño de sector (lógico / físico): 512 bytes / 512 bytes
+Tamaño E/S (mínimo/óptimo): 512 bytes / 512 bytes
+Identificador del disco: 0x3aaf8b1e
+
+Dispositivo Inicio    Comienzo      Fin      Bloques  Id  Sistema
+
+Ejercicio 4.1
+
+jesus@jesus-SO:/$ sudo mke2fs -L LABEL_ext3 dev/sdb1
+
+mke2fs 1.42.9 (4-Feb-2014)
+Etiqueta del sistema de ficheros=LABEL_ext3
+OS type: Linux
+Tamaño del bloque=4096 (bitácora=2)
+Tamaño del fragmento=4096 (bitácora=2)
+Stride=0 blocks, Stripe width=0 blocks
+126208 inodes, 504031 blocks
+25201 blocks (5.00%) reserved for the super user
+Primer bloque de datos=0
+Número máximo de bloques del sistema de ficheros=520093696
+16 bloque de grupos
+32768 bloques por grupo, 32768 fragmentos por grupo
+7888 nodos-i por grupo
+Respaldo del superbloque guardado en los bloques: 
+	32768, 98304, 163840, 229376, 294912
+Allocating group tables: hecho                           
+Escribiendo las tablas de nodos-i: hecho                           
+Escribiendo superbloques y la información contable del sistema de ficheros:  0/1     
+hecho
+
+Ejercicio 5.1
+
+a) Se podria conseguier que el siguiente arranque se ejecute automatica e2fsck de la siguiente manera sin que se haya alcanzado el maximo numero de montajes.
+
+tune2fs -c 0 [device]
+LA opcion -c indica que ejecute e2fsck cuando se haya montado 0 veces es decir sin que se haya montado un minimo de veces como se demanda.
+
+b)Se puede reservar para uso exclusivo un numero de bloques del sistema de archivo con:
+
+tune2fs -Q usrquota
+ 
+Ejercicio 7.2
+yum list
+yum list installed
+Desisntala el paquete que indiquemos
+yum remove tcp_wrappers
+Instala el paquete desinstalado
+yum install tcp_wrappers
+
+
+
+Ejercicios 7.3
+rpm -a
+rpm -p
+
+Ejericio 8.1
+
+Editar /etc/fstab y cambiar las opciones de /dev/sdb1 a usrgroup para activar las quotas de usuarios
+
+mount -o remount mnt/SA_ext3
+quotacheck -nm mnt/SA_ext3
+quotan -a
+edquota trabajo
+edquota -t
+
+Ejercicio 8.2
+
+Editamos /etc/fstab
+
+mount -o remount maria/home
+quotacheck -augmv maria/home
+quotan -ugmv
+edquota -u maria
+
+
+
+
+
+
+

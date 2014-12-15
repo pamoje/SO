@@ -1,0 +1,83 @@
+Ejercicio 3.1
+
+Ejercicio 4.1
+jesus@jesus-SO:~/Dropbox/Quinto/SO$ at 16:10
+warning: commands will be executed using /bin/sh
+at> tree > listahome-`date +%Y-%j-%T-$$`        
+at> <EOT>
+
+Ejercicio 4.2
+a) jesus@jesus-SO:~/Dropbox/Quinto/SO$ at -v 00:00
+Tue Oct 28 00:00:00 2014
+
+warning: commands will be executed using /bin/sh
+at> ps -l > medianoche.txt
+at> <EOT>
+job 5 at Tue Oct 28 00:00:00 2014
+
+b)jesus@jesus-SO:~/Dropbox/Quinto/SO$ at -v 00:01
+Tue Oct 28 00:01:00 2014
+
+warning: commands will be executed using /bin/sh
+at> ps -l > medianochemas1.txt
+at> <EOT>
+job 6 at Tue Oct 28 00:01:00 2014
+
+c)jesus@jesus-SO:~/Dropbox/Quinto/SO$ at -v 17:30 Oct 28
+Tue Oct 28 17:30:00 2014
+
+warning: commands will be executed using /bin/sh
+at> ps -l > 1730mañana.txt
+at> <EOT>
+job 7 at Tue Oct 28 17:30:00 2014
+
+d)jesus@jesus-SO:~/Dropbox/Quinto/SO$ at -v Dec 25
+Thu Dec 25 16:22:00 2014
+
+warning: commands will be executed using /bin/sh
+at> ps -l > diciembre.txt
+at> <EOT>
+job 8 at Thu Dec 25 16:22:00 2014
+
+e)jesus@jesus-SO:~/Dropbox/Quinto/SO$ at -v 00:00 Jun 1
+Mon Jun  1 00:00:00 2015
+
+warning: commands will be executed using /bin/sh
+at> ps -l >anonuevo.txt
+at> <EOT>
+job 11 at Mon Jun  1 00:00:00 2015
+
+jesus@jesus-SO:~/Dropbox/Quinto/SO$ atq
+6	Tue Oct 28 00:01:00 2014 a jesus
+11	Mon Jun  1 00:00:00 2015 a jesus
+8	Thu Dec 25 16:22:00 2014 a jesus
+10	Mon Jun  1 00:00:00 2015 a jesus
+5	Tue Oct 28 00:00:00 2014 a jesus
+7	Tue Oct 28 17:30:00 2014 a jesus
+
+jesus@jesus-SO:~/Dropbox/Quinto/SO$ atrm 10
+jesus@jesus-SO:~/Dropbox/Quinto/SO$ atq
+6	Tue Oct 28 00:01:00 2014 a jesus
+11	Mon Jun  1 00:00:00 2015 a jesus
+8	Thu Dec 25 16:22:00 2014 a jesus
+5	Tue Oct 28 00:00:00 2014 a jesus
+7	Tue Oct 28 17:30:00 2014 a jesus
+
+Ejercicio 4.3
+
+1. El directorio de trabajo que tiene inicialmente es el directorio desde donde se ha lanzado el daemon.
+2.¿?
+
+Ejercicio 4.4
+jesus@jesus-SO:~/Dropbox/Quinto/SO/Practica4$ at -f Script1 16:37
+warning: commands will be executed using /bin/sh
+job 13 at Mon Oct 27 16:37:00 2014
+
+Parte final del fichero.
+
+daemon    4588  3395  0 16:37 ?        00:00:00 atd
+jesus     4589  4588  0 16:37 ?        00:00:00 sh
+jesus     4591  4589  0 16:37 ?        00:00:00 ps -ef
+Mi pid = 4589
+
+Como podemos observar con la parte final de la ejecución del fichero podemos ver que es un proceso hijo del proceso 4588 que es el PID del proceso que padre con UID daemon.

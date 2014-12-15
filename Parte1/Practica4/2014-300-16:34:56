@@ -1,0 +1,202 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 15:40 ?        00:00:01 /sbin/init
+root         2     0  0 15:40 ?        00:00:00 [kthreadd]
+root         3     2  0 15:40 ?        00:00:00 [ksoftirqd/0]
+root         4     2  0 15:40 ?        00:00:00 [kworker/0:0]
+root         5     2  0 15:40 ?        00:00:00 [kworker/0:0H]
+root         7     2  0 15:40 ?        00:00:01 [rcu_sched]
+root         8     2  0 15:40 ?        00:00:00 [rcu_bh]
+root         9     2  0 15:40 ?        00:00:00 [migration/0]
+root        10     2  0 15:40 ?        00:00:04 [watchdog/0]
+root        11     2  0 15:40 ?        00:00:00 [khelper]
+root        12     2  0 15:40 ?        00:00:00 [kdevtmpfs]
+root        13     2  0 15:40 ?        00:00:00 [netns]
+root        14     2  0 15:40 ?        00:00:00 [writeback]
+root        15     2  0 15:40 ?        00:00:00 [kintegrityd]
+root        16     2  0 15:40 ?        00:00:00 [bioset]
+root        17     2  0 15:40 ?        00:00:00 [kworker/u17:0]
+root        18     2  0 15:40 ?        00:00:00 [kblockd]
+root        19     2  0 15:40 ?        00:00:00 [ata_sff]
+root        20     2  0 15:40 ?        00:00:00 [khubd]
+root        21     2  0 15:40 ?        00:00:00 [md]
+root        22     2  0 15:40 ?        00:00:00 [devfreq_wq]
+root        25     2  0 15:40 ?        00:00:00 [khungtaskd]
+root        26     2  0 15:40 ?        00:00:00 [kswapd0]
+root        27     2  0 15:40 ?        00:00:00 [ksmd]
+root        28     2  0 15:40 ?        00:00:00 [khugepaged]
+root        29     2  0 15:40 ?        00:00:00 [fsnotify_mark]
+root        30     2  0 15:40 ?        00:00:00 [ecryptfs-kthrea]
+root        31     2  0 15:40 ?        00:00:00 [crypto]
+root        43     2  0 15:40 ?        00:00:00 [kthrotld]
+root        45     2  0 15:40 ?        00:00:00 [scsi_eh_0]
+root        46     2  0 15:40 ?        00:00:00 [scsi_eh_1]
+root        68     2  0 15:40 ?        00:00:00 [deferwq]
+root        69     2  0 15:40 ?        00:00:00 [charger_manager]
+root        70     2  0 15:40 ?        00:00:00 [kworker/0:2]
+root       115     2  0 15:40 ?        00:00:00 [scsi_eh_2]
+root       116     2  0 15:40 ?        00:00:00 [scsi_eh_3]
+root       117     2  0 15:40 ?        00:00:00 [scsi_eh_4]
+root       118     2  0 15:40 ?        00:00:00 [scsi_eh_5]
+root       119     2  0 15:40 ?        00:00:00 [mpt_poll_0]
+root       120     2  0 15:40 ?        00:00:00 [scsi_eh_6]
+root       121     2  0 15:40 ?        00:00:00 [mpt/0]
+root       122     2  0 15:40 ?        00:00:00 [scsi_eh_7]
+root       123     2  0 15:40 ?        00:00:00 [scsi_eh_8]
+root       124     2  0 15:40 ?        00:00:00 [kpsmoused]
+root       125     2  0 15:40 ?        00:00:00 [scsi_eh_9]
+root       126     2  0 15:40 ?        00:00:00 [scsi_eh_10]
+root       127     2  0 15:40 ?        00:00:00 [scsi_eh_11]
+root       128     2  0 15:40 ?        00:00:00 [scsi_eh_12]
+root       129     2  0 15:40 ?        00:00:00 [scsi_eh_13]
+root       130     2  0 15:40 ?        00:00:00 [scsi_eh_14]
+root       131     2  0 15:40 ?        00:00:00 [scsi_eh_15]
+root       132     2  0 15:40 ?        00:00:00 [scsi_eh_16]
+root       133     2  0 15:40 ?        00:00:00 [scsi_eh_17]
+root       134     2  0 15:40 ?        00:00:00 [scsi_eh_18]
+root       135     2  0 15:40 ?        00:00:00 [scsi_eh_19]
+root       136     2  0 15:40 ?        00:00:00 [scsi_eh_20]
+root       137     2  0 15:40 ?        00:00:00 [scsi_eh_21]
+root       138     2  0 15:40 ?        00:00:00 [scsi_eh_22]
+root       139     2  0 15:40 ?        00:00:00 [scsi_eh_23]
+root       140     2  0 15:40 ?        00:00:00 [scsi_eh_24]
+root       141     2  0 15:40 ?        00:00:00 [scsi_eh_25]
+root       142     2  0 15:40 ?        00:00:00 [scsi_eh_26]
+root       143     2  0 15:40 ?        00:00:00 [scsi_eh_27]
+root       144     2  0 15:40 ?        00:00:00 [scsi_eh_28]
+root       145     2  0 15:40 ?        00:00:00 [scsi_eh_29]
+root       146     2  0 15:40 ?        00:00:00 [scsi_eh_30]
+root       147     2  0 15:40 ?        00:00:00 [scsi_eh_31]
+root       171     2  0 15:40 ?        00:00:00 [kworker/u16:28]
+root       175     2  0 15:40 ?        00:00:00 [scsi_eh_32]
+root       187     2  0 15:40 ?        00:00:00 [jbd2/sda1-8]
+root       188     2  0 15:40 ?        00:00:00 [ext4-rsv-conver]
+root       338     1  0 15:40 ?        00:00:00 upstart-udev-bridge --daemon
+root       368     1  0 15:40 ?        00:00:00 /lib/systemd/systemd-udevd --daemon
+root       396     1  0 15:40 ?        00:00:00 upstart-file-bridge --daemon
+message+   414     1  0 15:40 ?        00:00:00 dbus-daemon --system --fork
+syslog     416     1  0 15:40 ?        00:00:00 rsyslogd
+root       432     1  0 15:40 ?        00:00:00 /usr/sbin/bluetoothd
+root       438     1  0 15:40 ?        00:00:00 /lib/systemd/systemd-logind
+avahi      448     1  0 15:40 ?        00:00:02 avahi-daemon: running [jesus-SO.local]
+avahi      451   448  0 15:40 ?        00:00:00 avahi-daemon: chroot helper
+root       460     2  0 15:40 ?        00:00:00 [krfcommd]
+root       518     2  0 15:40 ?        00:00:00 [hci0]
+root       519     2  0 15:40 ?        00:00:00 [hci0]
+root       521     2  0 15:40 ?        00:00:00 [kworker/u17:1]
+root       524     2  0 15:40 ?        00:00:00 [ttm_swap]
+root       616     1  0 15:40 ?        00:00:00 upstart-socket-bridge --daemon
+root       666     1  0 15:40 ?        00:00:00 /usr/sbin/ModemManager
+root       736     1  0 15:40 ?        00:00:01 NetworkManager
+root       739     1  0 15:40 ?        00:00:00 /usr/sbin/cups-browsed
+root       746     1  0 15:40 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+root       752   736  0 15:40 ?        00:00:00 /sbin/dhclient -d -sf /usr/lib/NetworkManager/nm-dhcp-client.action -pf /run/sendsigs.omit.d/network-manager.dhclient-eth0.pid -lf /var/lib/NetworkManager/dhclient-3e553f67-9dca-42fd-8fee-04e0e442420c-eth0.lease -cf /var/lib/NetworkManager/dhclient-eth0.conf eth0
+root       900     1  0 15:41 tty4     00:00:00 /sbin/getty -8 38400 tty4
+root       904     1  0 15:41 tty5     00:00:00 /sbin/getty -8 38400 tty5
+root       910     1  0 15:41 tty2     00:00:00 /sbin/getty -8 38400 tty2
+root       911     1  0 15:41 tty3     00:00:00 /sbin/getty -8 38400 tty3
+root       914     1  0 15:41 tty6     00:00:00 /sbin/getty -8 38400 tty6
+root       965     1  0 15:41 ?        00:00:00 cron
+kernoops   976     1  0 15:41 ?        00:00:00 /usr/sbin/kerneloops
+root      1007     1  0 15:41 ?        00:00:00 acpid -c /etc/acpi/events -s /var/run/acpid.socket
+nobody    1019   736  0 15:41 ?        00:00:00 /usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/run/sendsigs.omit.d/network-manager.dnsmasq.pid --listen-address=127.0.1.1 --conf-file=/var/run/NetworkManager/dnsmasq.conf --cache-size=0 --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d
+root      1088     1  0 15:41 tty1     00:00:00 /sbin/getty -8 38400 tty1
+whoopsie  1098     1  0 15:41 ?        00:00:00 whoopsie
+root      1213     1  0 15:41 ?        00:00:00 lightdm
+root      1223     1  0 15:41 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root      1245  1213  0 15:41 tty7     00:00:24 /usr/bin/X -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root      1252  1213  0 15:41 ?        00:00:00 lightdm --session-child 12 15
+root      1256     2  0 15:41 ?        00:00:00 [kauditd]
+jesus     1275  1252  0 15:41 ?        00:00:00 init --user
+jesus     1348  1275  0 15:41 ?        00:00:00 ssh-agent -s
+jesus     1352  1275  0 15:41 ?        00:00:01 dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-CgJ7ZNv8e6
+jesus     1360  1275  0 15:41 ?        00:00:00 upstart-event-bridge
+jesus     1370  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/hud/window-stack-bridge
+jesus     1374  1275  0 15:41 ?        00:00:00 upstart-dbus-bridge --daemon --session --user --bus-name session
+jesus     1376  1275  0 15:41 ?        00:00:00 upstart-dbus-bridge --daemon --system --user --bus-name system
+jesus     1378  1275  0 15:41 ?        00:00:00 upstart-file-bridge --daemon --user
+jesus     1380  1275  0 15:41 ?        00:00:04 /usr/bin/ibus-daemon --daemonize --xim
+jesus     1395  1275  0 15:41 ?        00:00:00 /usr/lib/unity-settings-daemon/unity-settings-daemon
+jesus     1399  1275  0 15:41 ?        00:00:01 /usr/lib/i386-linux-gnu/hud/hud-service
+jesus     1401  1275  0 15:41 ?        00:00:00 /usr/lib/at-spi2-core/at-spi-bus-launcher --launch-immediately
+jesus     1402  1275  0 15:41 ?        00:00:00 gnome-session --session=ubuntu
+jesus     1404  1275  0 15:41 ?        00:00:02 /usr/lib/unity/unity-panel-service
+jesus     1408  1401  0 15:41 ?        00:00:00 /bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3
+jesus     1413  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfsd
+jesus     1419  1380  0 15:41 ?        00:00:00 /usr/lib/ibus/ibus-dconf
+jesus     1423  1275  0 15:41 ?        00:00:01 /usr/lib/i386-linux-gnu/bamf/bamfdaemon
+jesus     1424  1380  0 15:41 ?        00:00:01 /usr/lib/ibus/ibus-ui-gtk3
+jesus     1426  1275  0 15:41 ?        00:00:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+jesus     1436  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+jesus     1447  1275  0 15:41 ?        00:00:00 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+root      1472     1  0 15:41 ?        00:00:00 /usr/lib/upower/upowerd
+jesus     1502  1275  0 15:41 ?        00:00:00 /usr/bin/gnome-keyring-daemon --start --components=ssh
+jesus     1566  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-keyboard-service --use-gtk
+jesus     1568  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-messages/indicator-messages-service
+jesus     1587  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-bluetooth/indicator-bluetooth-service
+jesus     1596  1380  0 15:41 ?        00:00:01 /usr/lib/ibus/ibus-engine-simple
+jesus     1630  1275  0 15:41 ?        00:00:00 /usr/bin/pulseaudio --start --log-target=syslog
+rtkit     1633     1  0 15:41 ?        00:00:00 /usr/lib/rtkit/rtkit-daemon
+jesus     1649  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-power/indicator-power-service
+jesus     1663  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-datetime/indicator-datetime-service
+jesus     1674  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-sound/indicator-sound-service
+jesus     1679  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-printers/indicator-printers-service
+jesus     1685  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-session/indicator-session-service
+jesus     1696  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/indicator-application/indicator-application-service
+jesus     1773  1275  0 15:41 ?        00:00:00 /usr/lib/evolution/evolution-source-registry
+colord    1781     1  0 15:41 ?        00:00:00 /usr/lib/colord/colord
+jesus     1783  1275  0 15:41 ?        00:00:00 /usr/lib/dconf/dconf-service
+jesus     1799  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/notify-osd
+jesus     1803  1402  0 15:41 ?        00:00:19 compiz
+jesus     1821  1275  0 15:41 ?        00:00:00 /usr/lib/evolution/evolution-calendar-factory
+jesus     1908  1402  0 15:41 ?        00:00:00 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+jesus     1910  1402  0 15:41 ?        00:00:05 nautilus -n
+jesus     1911  1402  0 15:41 ?        00:00:00 nm-applet
+jesus     1912  1402  0 15:41 ?        00:00:00 /usr/lib/unity-settings-daemon/unity-fallback-mount-helper
+jesus     1934  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+root      1937     1  0 15:41 ?        00:00:00 /usr/lib/udisks2/udisksd --no-debug
+jesus     1949  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+jesus     1957  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+jesus     1961  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+jesus     1963  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/gconf/gconfd-2
+jesus     1967  1275  0 15:41 ?        00:00:12 /home/jesus/.dropbox-dist/dropbox-lnx.x86-2.10.30/dropbox
+jesus     1974  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfsd-burn --spawner :1.5 /org/gtk/gvfs/exec_spaw/0
+jesus     1984  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.5 /org/gtk/gvfs/exec_spaw/1
+jesus     2002  1275  0 15:41 ?        00:00:00 /usr/lib/gvfs/gvfsd-metadata
+jesus     2074  1402  0 15:41 ?        00:00:00 telepathy-indicator
+jesus     2082  1275  0 15:41 ?        00:00:00 /usr/lib/telepathy/mission-control-5
+jesus     2099  1402  0 15:41 ?        00:00:00 zeitgeist-datahub
+jesus     2104  1275  0 15:41 ?        00:00:00 /usr/bin/zeitgeist-daemon
+jesus     2111  1275  0 15:41 ?        00:00:00 /usr/lib/i386-linux-gnu/zeitgeist-fts
+jesus     2119  2111  0 15:41 ?        00:00:00 /bin/cat
+jesus     2149  1402  0 15:42 ?        00:00:00 update-notifier
+jesus     2172  1402  0 15:43 ?        00:00:00 /usr/lib/i386-linux-gnu/deja-dup/deja-dup-monitor
+jesus     2202  1275  0 15:43 ?        00:00:04 evince /home/jesus/Dropbox/Quinto/SO/Practica4/SO-P-Modulo1-Sesion4-Guion.pdf
+jesus     2209  1275  0 15:43 ?        00:00:00 /usr/lib/evince/evinced
+jesus     2216  1275  0 15:44 ?        00:00:07 gnome-terminal
+jesus     2223  2216  0 15:44 ?        00:00:00 gnome-pty-helper
+jesus     2224  2216  0 15:44 pts/0    00:00:00 bash
+jesus     2278  2224  0 15:44 pts/0    00:00:07 gedit Ejercicios
+root      2435     2  0 15:56 ?        00:00:00 [kworker/u16:0]
+root      2620     1  0 15:56 ?        00:00:00 /usr/sbin/cupsd -f
+lp        2623  2620  0 15:56 ?        00:00:00 /usr/lib/cups/notifier/dbus dbus:// 
+jesus     2729  1275  0 15:57 ?        00:00:03 /usr/bin/python3 /usr/bin/update-manager --no-update --no-focus-on-map
+daemon    3395     1  0 16:00 ?        00:00:00 atd
+jesus     3491  2216  0 16:05 pts/3    00:00:00 bash
+jesus     4063  1275  0 16:18 ?        00:00:00 /usr/lib/i386-linux-gnu/unity-scope-home/unity-scope-home
+jesus     4077  1275  0 16:18 ?        00:00:00 /usr/bin/unity-scope-loader applications/applications.scope applications/scopes.scope commands.scope
+jesus     4080  1275  0 16:18 ?        00:00:00 /usr/lib/i386-linux-gnu/unity-lens-files/unity-files-daemon
+jesus     4126  1275  0 16:18 ?        00:00:06 /opt/google/chrome/chrome     
+jesus     4134  4126  0 16:18 ?        00:00:00 cat
+jesus     4135  4126  0 16:18 ?        00:00:00 cat
+jesus     4137  4126  0 16:18 ?        00:00:00 /opt/google/chrome/chrome-sandbox /opt/google/chrome/chrome --type=zygote
+jesus     4138  4137  0 16:18 ?        00:00:00 /opt/google/chrome/chrome --type=zygote
+jesus     4144  4138  0 16:18 ?        00:00:00 /opt/google/chrome/chrome-sandbox /opt/google/chrome/nacl_helper
+jesus     4145  4144  0 16:18 ?        00:00:00 /opt/google/chrome/nacl_helper
+jesus     4147  4138  0 16:18 ?        00:00:00 /opt/google/chrome/chrome --type=zygote
+jesus     4167  4126  0 16:18 ?        00:00:01 /opt/google/chrome/chrome --type=gpu-process --channel=4126.0.1946114488 --supports-dual-gpus=false --gpu-driver-bug-workarounds=1,15 --disable-accelerated-video-decode --gpu-vendor-id=0x15ad --gpu-device-id=0x0405 --gpu-driver-vendor --gpu-driver-version
+jesus     4174  4167  0 16:18 ?        00:00:00 /opt/google/chrome/chrome --type=gpu-broker                                                                                                                                                                                                         
+jesus     4294  4147  0 16:19 ?        00:00:01 /opt/google/chrome/chrome --type=renderer --enable-deferred-image-decoding --lang=es --force-fieldtrials=AutoReloadExperiment/Enabled/AutoReloadVisibleOnlyExperiment/Enabled/ExtensionInstallVerification/None/OmniboxBundledExperimentV1/StandardR4/PasswordGeneration/Disabled/Prerender/PrerenderEnabled/PrerenderFromOmnibox/OmniboxPrerenderEnabled/PrerenderLocalPredictorSpec/LocalPredictor=Disabled/QUIC/Disabled/RapporRollout/Enabled/SDCH/EnabledAll/SafeBrowsingIncidentReportingService/Default/SettingsEnforcement/no_enforcement/Test0PercentDefault/group_01/UMA-Dynamic-Binary-Uniformity-Trial/default/UMA-New-Install-Uniformity-Trial/Experiment/UMA-Population-Restrict/normal/UMA-Session-Randomized-Uniformity-Trial-5-Percent/group_14/UMA-Uniformity-Trial-1-Percent/group_35/UMA-Uniformity-Trial-10-Percent/group_06/UMA-Uniformity-Trial-100-Percent/group_01/UMA-Uniformity-Trial-20-Percent/group_03/UMA-Uniformity-Trial-5-Percent/group_05/UMA-Uniformity-Trial-50-Percent/group_01/VoiceTrigger/Install/ --renderer-print-preview --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --enable-delegated-renderer --enable-impl-side-painting --disable-accelerated-video-decode --channel=4126.6.1270405181
+root      4481     1  0 16:33 ?        00:00:00 /lib/systemd/systemd-hostnamed
+jesus     4512  2224  0 16:34 pts/0    00:00:00 /bin/bash ./Script1
+jesus     4514  4512  0 16:34 pts/0    00:00:00 ps -ef
+Mi pid = 4512

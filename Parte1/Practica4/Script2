@@ -1,0 +1,5 @@
+#!/bin/bash
+#Script ejercicio 4.5
+
+nombrearchivo=modificados.txt
+find -ctime -24  > $nombrearchivo
